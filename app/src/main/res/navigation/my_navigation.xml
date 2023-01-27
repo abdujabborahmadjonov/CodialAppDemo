@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="dev.abdujabbor.codial.workinggroup.GroupsFragment"
+        android:label="GroupsFragment" >
+
+
+        <action
+            android:id="@+id/action_groupsFragment_to_addGroupsFragment"
+            app:destination="@id/addGroupsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.abdujabbor.codial.basic.HomeFragment"
+        android:label="HomeFragment" >
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_allCoursesFragment"
+            app:destination="@id/allCoursesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allCoursesForMentorsFragment"
+            app:destination="@id/allCoursesForMentorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGroupsFragment"
+        android:name="dev.abdujabbor.codial.workinggroup.AddNewGroupFragment"
+        android:label="AddGroupsFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/allCoursesFragment"
+        android:name="dev.abdujabbor.codial.workingCourses.AllCoursesFragment"
+        android:label="fragment_all_courses"
+        tools:layout="@layout/fragment_all_courses" >
+
+        <action
+            android:id="@+id/action_allCoursesFragment_to_abourCoursesFragment"
+            app:destination="@id/abourCoursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allCoursesForMentorsFragment"
+        android:name="dev.abdujabbor.codial.workingMentors.AllCoursesForMentorsFragment"
+        android:label="fragment_all_courses_for_mentors"
+        tools:layout="@layout/fragment_all_courses_for_mentors" >
+
+
+        <action
+            android:id="@+id/action_allCoursesForMentorsFragment_to_mentorsOfCoursesFragment"
+            app:destination="@id/mentorsOfCoursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorsOfCoursesFragment"
+        android:name="dev.abdujabbor.codial.workingMentors.MentorsOfCoursesFragment"
+        android:label="fragment_mentors_of_courses"
+        tools:layout="@layout/fragment_mentors_of_courses" >
+
+        <action
+            android:id="@+id/action_mentorsOfCoursesFragment_to_addMentorFragment"
+            app:destination="@id/addMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMentorFragment"
+        android:name="dev.abdujabbor.codial.workingMentors.AddMentorFragment"
+        android:label="fragment_add_mentor"
+        tools:layout="@layout/fragment_add_mentor" >
+    </fragment>
+    <fragment
+        android:id="@+id/abourCoursesFragment"
+        android:name="dev.abdujabbor.codial.workingCourses.AbourCoursesFragment"
+        android:label="fragment_abour_courses"
+        tools:layout="@layout/fragment_abour_courses" />
+</navigation>

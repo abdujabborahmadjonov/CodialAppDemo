@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CodiaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyAnimation">
+
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+
+    </style>
+
+    <style name="MyMenuDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#12677F</item>
+        <item name="dialogCornerRadius">8dp</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">#2196F3</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#FFC107</item>
+        <item name="colorControlActivated">#FFC107</item>
+        <item name="colorControlHighlight">#FFC107</item>
+        <item name="android:textColorSecondary">#2196F3</item>
+        <item name="android:textColor">#FFC107</item>
+    </style>
+
+</resources>
